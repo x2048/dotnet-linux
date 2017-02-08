@@ -16,5 +16,6 @@ script:
 - docker build -t bis0n/dotnet-linux:latest .
 - docker login -u bis0n -p $DOCKER_PASSWORD
 - docker push bis0n/dotnet-linux:latest
+- docker run --rm bis0n/dotnet-linux:latest
 env:
 - secure: bs0a+R7HU+2UJAQ9CsB3XRcPelgbqhghVupZwzSuTfB6zjiW3gwcDCa0x8cBIv7spk+u/okC4FLjp3jZh1z1FverOGAtr7p8g791DZvdPqMT7ghteOTQlXIyPgAVNobJZ8mFmsDIGhF/SGhrXHytvOcjtk+upz8S5wM4Y4/c24CFgmhgIe43d+JVvZZ/eku8BORumqRYY0rn3f2U5Z/ALaV0Aomlv6ef4Dn/s26SjioxvZzAxc4ut29zR8gEltroqBK/b7F9hO2ZslwzKzke6QyVcnyEN7kudgZWm358hGjw0E8NsY5fbVio3iJhWFOq6ziyYXxPl8o/8uFuHk+P8CvETzuP6crOP34iXURhYJFkpmY+GQe4oPUIYYQeVbgxbwiVBwnAzF2dm/VV87HATt79kbV9iw/7GlotBR+iXDLD9YNTnkm35x3SPEj0zYloaIzBQoNNJ7vnTqk9ArnzoA9fFd0ZAaW4UHyP/f25YvO00m9N3jAVNEpEKu8Fnpr9GhBPNVYYs+apSiubruMluIPM2c85Vy5CP85z6E4lHhM0reCvkrreHic8Y2gW4/G1jTB8fTakOGNot6mxsRLNQZ2hW+abRPDDKM+L6SntdMhwK85t5Ek154CEGZj3BnEFEloIEZIzo2hcBcpqpgq7E+a1M6RScYfDKt1NsZPB/Sw=
