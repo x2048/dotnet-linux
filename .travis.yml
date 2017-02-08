@@ -4,7 +4,7 @@ dist: trusty
 service:
 - docker
 script:
-- docker run microsoft/dotnet:1.1-sdk-projectjson -v $PWD:/dotnet-linux bash -c "cd /dotnet-linux; dotnet restore; dotnet publish -o output"
+- docker run -v $PWD:/dotnet-linux -it microsoft/dotnet:1.1-sdk-projectjson bash -c "cd /dotnet-linux; dotnet restore; dotnet publish -o output"
 - docker build -t bis0n/dotnet-linux:latest .
 - docker login -u bis0n -p $DOCKER_PASSWORD
 - docker push bis0n/dotnet-linux:latest
